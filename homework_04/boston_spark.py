@@ -15,8 +15,12 @@ PATH = sys.argv[1]
 
 CSV_FILE = 'crime.csv'
 OFFENSE_CODES = 'offense_codes.csv'
-df = spark.read.csv(os.path.join(PATH,CSV_FILE), header=True)
-codes = spark.read.csv(os.path.join(PATH,OFFENSE_CODES), sep=',', header=True)
+
+df = spark.read.csv(os.path.join(PATH,CSV_FILE), header=True, inferSchema=True)
+codes = spark.read.csv(os.path.join(PATH,OFFENSE_CODES), sep=',', header=True, inferSchema=True)
+
+# delete duplicate values in the table with offence codes
+codes = codes.dropDuplicates()
 
 # delete the part after "-" and whitespaces in offense description
 
