@@ -19,6 +19,8 @@
     ```
 5. Перейдите по адресу http://localhost:5601 и создайте отчет (dashboard), показывающий распределение запросов с разными кодами ответов (status_code) по времени.
 
+</details>
+
 ## Файлы
 * **[clickstream.conf](logstash/clickstream.conf)]** - Разработанный файл конфигурации
 
@@ -45,3 +47,7 @@
 ## Результат работы
 
 **Weblog Dashboard**
+
+Распределение запросов с разными кодами ответов (status_code) по времени:
+
+![Weblog Dashboard](https://github.com/FaradG11/Otus_DE/blob/ac37b371006de210f9062e31e308fede330879b2/homework_07%20(ELK)/dashboard.png)
