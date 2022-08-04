@@ -26,23 +26,7 @@
 
 * **[docker-compose.yml](docker-compose.yml)** - Доработанный файл `docker-compose` для одновременного запуска сервисов **ELK** и выполнения загрузки данных **Logstash** по файлу конфигурации [clickstream.conf](logstash/clickstream.conf).
 
-
-## Инструкция по запуску 
-1. Развернуть инфраструктуру сервисов **ELK**, выполнив команду:<br><br>
-    ```Bash 
-    docker-compose -f docker-compose.yml up
-    ```
-2. После загрузки всех сервисов - перейти по адресу http://localhost:5601
-3. Импортировать настройки и сохраненные объекты в **Kibana**.<br>
-    Для этого необходимо выполнить следующие шаги:
-    * Перейти в настройки:  `Management -> Kibana -> Saved Objects`
-    * Выполнить импорт файла `kibana.ndjson`, с включенными опциями `Check for existing objects` и `Automatically overwrite conflicts`
-    * После выполнения импорта можно запускать на выполнение **Weblog Dashboard**, из списка сохраненных объектов или из раздела **Kibana**.
-4. По завершению работы, выполнить команду:<br><br>
-    ```Bash 
-    docker-compose -f docker-compose.yml down
-    ```
-   
+ 
 
 ## Результат работы
 
