@@ -34,4 +34,4 @@
 
 Распределение запросов с разными кодами ответов (status_code) по времени:
 
-![Weblog Dashboard](https://github.com/FaradG11/Otus_DE/blob/ac37b371006de210f9062e31e308fede330879b2/homework_07%20(ELK)/dashboard.png)
+![Weblog Dashboard](https://github.com/FaradG11/Otus_DE/blob/5ceec1e57f7d6f2dfaa801c697f5b7eedd7aa5b4/homework_07_ELK/dashboard.png)
